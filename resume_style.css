@@ -1,0 +1,23 @@
+body {
+    position: relative;    
+}
+#title{
+    text-align: center;
+    background-color: darkgray;
+    /*background-image: url('');*/
+    width: 100%;
+}
+#title h1{    
+    background-color: darkgray;
+    line-height: 150px;
+}
+ul.nav-pills {
+    top: 150px;
+    position: fixed;
+}
+/*div.col-8 div {
+    height: 1000px;
+}*/
+#section3 li:hover{
+    background-color: deepskyblue;
+}

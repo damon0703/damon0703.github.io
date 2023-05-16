@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./resume_style.css">
+    <script src="./resume.js"></script>
+</head>
+<body style="background-image: url(./assets/images/background.jpg); background-size: cover;data-spy="scroll" data-target="#myScrollspy" data-offset="1" >
+    <div  id="title">
+        <h1>履歷表My Resume Page</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">基本訊息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">工作經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">專長技能</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">作品集</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#section41">Link 1</a>
+                            <a class="dropdown-item" href="#section42">Link 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+                <article id="section1">
+                    <h3>基本資料</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th>姓名</th>
+                                        <td>郭佑銘Damon Kuo</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th>連絡電話</th>
+                                        <td>0906-000000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>email</th>
+                                        <td>damon0703@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>通訊地址</th>
+                                        <td>台北市北投區崇仁路</td>
+                                    </tr>
+                                    <tr>
+                                        <th>學歷</th>
+                                        <td>銘傳大學傳播管理學系碩士</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <img  src="assets/images/self.jpg" alt="My Image"  style="padding-left:200px;" width="350" height="200">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </article>
+                <br>
+                <br>
+                <article id="section2">
+                    <h3>工作經歷</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>公司名稱</th>
+                                <th>工作職稱</th>
+                                <th>工作期間</th>
+                                <th>工作內容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>國防部</td>
+                                <td>中校參謀</td>
+                                <td>91.11.29-112.06.04</td>
+                                <td>文書行政、資訊安全</td>
+                            </tr>
+                            <tr>
+                                <td>科技公司</td>
+                                <td>專案經理</td>
+                                <td>112.06.08-迄今</td>
+                                <td>文書行政、管制專案進度與提報</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </article>
+                <br>
+                <br>
+                <article id="section3">
+                    <h3>專長技能</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">拍攝展場，會場錄影</li>
+                        <li class="list-group-item">文書行政、專案提報</li>
+                        <li class="list-group-item">採購作業、招標文件</li>
+                        <li class="list-group-item">英日語溝通</li>
+                    </ul>
+                </article>
+                <br>
+                <br>
+                <article id="section41">
+                    <h3>作品集-社區管理系統APP</h3>
+                    <video width="640" height="480" controls>
+                        <source src="assets/images/video.mp4">
+                    </video>
+                </article>
+                <br>
+                <br>
+                <article id="section42">
+                    <h3>自傳</h3>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        翻閱自傳
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h1 class="modal-title">自傳</h1>
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h3>郭佑銘的自傳</h3>
+                                    <p>自研究所畢業後，經過多年工作試煉，已培養了我主動、負責、認真、積極的精神去從事任何交辦事項，相信在這幾年的試煉當中，對於人生應有的基本工作態度已經具備，不若當下年輕人具抗壓性低的缺點，在這瞬息萬變的職場環境裡，相信我已經做了好最好的準備。</p>
+                                    <p>在現今人們觀念中，有競爭才有進步，因為肯付出儲備自我實力的人大有人在，而我就是一個最好的案例。期盼 貴單位給予機會，以本人之專業技能及肯謙卑學習的態度，必能完成 貴單位日後所賦予之任務，如蒙錄取，必當竭盡犧牲奉獻，以不負 貴單位期盼。</p>
+
+                                    <p>Thank You</p>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+</body>
+</html>
